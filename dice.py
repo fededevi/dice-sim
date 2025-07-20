@@ -117,5 +117,6 @@ for row, (method_name, method_results) in enumerate(results.items()):
         ax.set_ylim(0, max_prob * 1.1 if max_prob > 0 else 1)
         ax.grid(axis='y')
 
+
 plt.tight_layout()
-plt.show()
+plt.savefig("output.png")  # Save the image
